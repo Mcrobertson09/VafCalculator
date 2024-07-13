@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migration Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/nirmala" rel="stylesheet">
+                
+</head>
+<body>
+    <div class="Migration">
+        
+        <div class="container">
+            <h1>VAF MIGRATION CALC</h1>
+            <form id="salesForm">
+                <label for="devicesSold">Devices Sold: </label>
+                <input type="text" id="devicesSold" name="devicesSold" required>
+                <br>
+                <label for="linesConverted">Lines Converted: </label>
+                <input type="text" id="linesConverted" name="linesConverted" required>
+                <br>
+                <div id="radioText">
+                    <label>Select an Option:</label> <br>
+                    <input type="radio" id="go5gPlus" name="go5gOption" value="Go5G Plus" checked>
+                    <label for="go5gPlus">Go5G Plus</label>
+                    <input type="radio" id="go5gNext" name="go5gOption" value="Go5G Next">
+                    <label for="go5gNext">Go5G Next</label>
+                </div>
+                <br>
+            </form>
+            <button type="button" onclick="calculateTotal()">Calculate Total</button>
+        </div>
+        <div class="containerResult">
+             <h1>VAF CREDIT</h1>
+            <p id="linesResult"></p>
+            <p id="vafResult"></p>
+            <p id="totalResult"></p>
+            
+        </div>
+        <div class="commissionResult">
+            <h1>COMMISSION</h1>
+            <p>Comming Soon</p>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

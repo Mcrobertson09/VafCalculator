@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: rgb(215, 208, 208); /* Light gray background */
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* T-Mobile Magenta theme */
+.container {
+    max-width: 450px; /* Adjust as needed for your desired maximum width */
+    min-width: 450px;
+    font-size: 18px;
+    float: left;
+    padding: 15px;
+    background-color: #e20074; /* T-Mobile Magenta */
+    border-radius: 5px;
+    color: #ffffff; /* White text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0.5, 0.5);
+}
+
+.containerResult {
+    max-width: 450px; /* Adjust as needed for your desired maximum width */
+    min-width: 450px;
+    font-size: 18px;
+    padding: 15px;
+    float: left;
+    clear: left;
+    margin-top: 5px;
+    background-color: #e20074; /* T-Mobile Magenta */
+    border-radius: 5px;
+    color: #ffffff; /* White text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0.5, 0.5);
+}
+.commissionResult {
+    max-width: 450px; /* Adjust as needed for your desired maximum width */
+    min-width: 450px;
+    font-size: 18px;
+    padding: 15px;
+    float: left;
+    clear: left;
+    margin-top: 5px;
+    background-color: #e20074; /* T-Mobile Magenta */
+    border-radius: 5px;
+    color: #ffffff; /* White text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0.5, 0.5);
+} 
+
+h1 {
+    margin: 2px;
+    font-size: 30px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+p {
+    margin: 2px;
+}
+
+/* Additional styling for form elements, buttons, etc. */
+input[type="text"],
+input[type="number"]
+{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    margin: 5px ;
+    display: inline-block;
+}
+
+#radioText {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #0c0c0c; /* Darker shade of Magenta */
+    float: right;
+    color: #ffffff;
+    border: white;
+    border-width: 1em;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+/* Media query for smaller screens (e.g., cellphones) */
+@media (max-width: 500px) {
+    .container {
+        max-width: 100%; /* Take full width on small screens */
+    }
+}
