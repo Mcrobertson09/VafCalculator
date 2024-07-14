@@ -9,8 +9,8 @@ body {
 
 /* T-Mobile Magenta theme */
 .container {
-    max-width: 450px; /* Adjust as needed for your desired maximum width */
-    min-width: 450px;
+    max-width: 400px; /* Adjust as needed for your desired maximum width */
+    min-width: 400px;
     font-size: 18px;
     float: left;
     padding: 15px;
@@ -21,8 +21,8 @@ body {
 }
 
 .containerResult {
-    max-width: 450px; /* Adjust as needed for your desired maximum width */
-    min-width: 450px;
+    max-width: 400px; /* Adjust as needed for your desired maximum width */
+    min-width: 400px;
     font-size: 18px;
     padding: 15px;
     float: left;
@@ -34,8 +34,8 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0.5, 0.5);
 }
 .commissionResult {
-    max-width: 450px; /* Adjust as needed for your desired maximum width */
-    min-width: 450px;
+    max-width: 400px; /* Adjust as needed for your desired maximum width */
+    min-width: 400px;
     font-size: 18px;
     padding: 15px;
     float: left;
@@ -89,7 +89,7 @@ button {
 
 
 /* Media query for smaller screens (e.g., cellphones) */
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     .container {
         max-width: 100%; /* Take full width on small screens */
     }
