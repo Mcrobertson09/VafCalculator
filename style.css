@@ -91,6 +91,6 @@ button {
 /* Media query for smaller screens (e.g., cellphones) */
 @media (max-width: 400px) {
     .container {
-        max-width: 100%; /* Take full width on small screens */
+        max-width: 90%; /* Take full width on small screens */
     }
 }
