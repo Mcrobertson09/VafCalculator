@@ -29,7 +29,7 @@
                 </div>
                 <br>
             </form>
-            <button type="button" onclick="calculateTotal()">Calculate Total</button>
+            <button type="button" onclick="calculateTotal(), commissionCalculation()">Calculate Total</button>
         </div>
         <div class="containerResult">
              <h1>VAF CREDIT</h1>
@@ -40,7 +40,9 @@
         </div>
         <div class="commissionResult">
             <h1>COMMISSION</h1>
-            <p>Comming Soon</p>
+            <p id="vafCommish"></p>
+            <p id="deviceCommish"></p>
+            <p id="totalCommish"></p>
        </div>
     </div>
     <script src="script.js"></script>

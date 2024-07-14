@@ -14,7 +14,7 @@ body {
     font-size: 18px;
     float: left;
     padding: 15px;
-    background-color: #e20074; /* T-Mobile Magenta */
+    background-image: linear-gradient(to top, #e20074, #000000); /* Magenta to black */
     border-radius: 5px;
     color: #ffffff; /* White text */
     box-shadow: 0 4px 6px rgba(0, 0, 0.5, 0.5);
