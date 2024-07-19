@@ -40,7 +40,7 @@ function calculateTotal() {
     document.getElementById('linesResult').textContent = `${linesActivated}`;
     document.getElementById('planResult').textContent = `${selectedOption}`;
     document.getElementById('priceplanResult').textContent = `$${vafValue}`;
-    document.getElementById('totalResult').textContent = `$${finalTotal}`;
+    document.getElementById('totalResult').textContent = `$${finalTotal.toFixed(2)}`;
 }
 
 // Function to calculate commission and display results
