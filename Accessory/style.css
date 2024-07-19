@@ -89,9 +89,9 @@ table {
         max-width: 100%; /* Adjust as needed */
     }
 
-    .Migration,
+    .migration,
     .containerResult,
-    .commissionResult {
+    .unitResults {
         max-width: 100%; /* Take full width on small screens */
         min-width: auto; /* Reset minimum width */
     }
