@@ -54,7 +54,7 @@ p {
 input[type="text"],
 input[type="number"]
 {
-    width: 90%;
+    width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -94,5 +94,10 @@ table {
     .unitResults {
         max-width: 100%; /* Take full width on small screens */
         min-width: auto; /* Reset minimum width */
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        max-width: 100%; /* Take full width on small screens */
     }
 }
