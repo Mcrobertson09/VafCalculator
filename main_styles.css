@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(215, 208, 208); /* Light gray background */
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* T-Mobile Magenta theme */
+.container {
+    max-width: 100%;
+    font-size: 16px;
+    background-image: linear-gradient(to top, #e20074, #000000);
+    border-radius: 5px;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+h1 {
+    margin: 2px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Button styling (unchanged) */
+button {
+    background-color: #e20074;
+    display: block;
+    width: 100%;
+    margin: 10px;
+    color: #ffffff;
+    border: 1px solid white;
+    padding: 10px 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Media query for larger screens (optional) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 450px; /* Adjust as needed for tablet screens */
+        font-size: 18px; /* Increase font size for larger screens */
+        padding: 15px; /* Restore padding for tablets */
+    }
+}

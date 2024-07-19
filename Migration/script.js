@@ -47,4 +47,3 @@ function commissionCalculation() {
     document.getElementById('deviceCommish').textContent = `Upgrade Commission: $${deviceCommish}`;
     document.getElementById('totalCommish').textContent = `Total Commission: $${totalCommish}`;
 }
-
