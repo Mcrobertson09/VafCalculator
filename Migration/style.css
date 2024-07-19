@@ -2,18 +2,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 75vh;
     background-color: rgb(215, 208, 208); /* Light gray background */
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* T-Mobile Magenta theme */
-.container {
-    max-width: 450px; /* Adjust as needed for your desired maximum width */
-    min-width: 450px;
-    font-size: 18px;
-    float: left;
-    padding: 15px;
+.Migration {
+    max-width: 100%; /* Take full width on small screens */
+    font-size: 16px; /* Adjust font size for readability */
+    padding: 10px; /* Reduce padding for smaller screens */
     background-image: linear-gradient(to top, #e20074, #000000); /* Magenta to black */
     border-radius: 5px;
     color: #ffffff;
@@ -25,6 +23,7 @@ body {
     max-width: 400px; /* Adjust as needed for your desired maximum width */
     min-width: 400px;
     font-size: 18px;
+    margin-top: 10px; /* Add some spacing between the containers */
     padding: 15px;
     float: left;
     clear: left;
@@ -38,6 +37,7 @@ body {
     max-width: 400px; /* Adjust as needed for your desired maximum width */
     min-width: 400px;
     font-size: 18px;
+    margin-top: 10px; /* Add some spacing between the containers */
     padding: 15px;
     float: left;
     clear: left;
