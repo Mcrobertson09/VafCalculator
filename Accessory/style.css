@@ -96,11 +96,15 @@ table {
   }
 
 
-/* Media query for larger screens (optional) */
-@media (min-width: 768px) {
-    .container {
-        max-width: 400px; /* Adjust as needed for tablet screens */
-        font-size: 18px; /* Increase font size for larger screens */
-        padding: 15px; /* Restore padding for tablets */
+  @media (max-width: 480px) {
+    .parentContainer {
+        max-width: 100%; /* Adjust as needed */
+    }
+
+    .Migration,
+    .containerResult,
+    .commissionResult {
+        max-width: 100%; /* Take full width on small screens */
+        min-width: auto; /* Reset minimum width */
     }
 }
