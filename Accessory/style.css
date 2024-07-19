@@ -19,20 +19,20 @@ body {
     overflow: auto; /* Apply clearfix */
 }
 
-.containerResult, .unitResults {
-    max-width: 400px; /* Adjust as needed for your desired maximum width */
-    min-width: 400px;
+.containerResult,
+.unitResults {
+    max-width: 100%; /* Take full width on small screens */
     font-size: 18px;
     margin-top: 10px; /* Add some spacing between the containers */
     padding: 15px;
-    float: left;
-    clear: left;
-    margin-top: 5px;
     background-color: #e20074; /* T-Mobile Magenta */
     border-radius: 5px;
     color: #ffffff; /* White text */
-    box-shadow: 0 4px 6px rgba(0, 0, 0.5, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 h3, h1 {
     margin: 2px;
@@ -62,8 +62,8 @@ input[type="number"]
 /* Button styling (unchanged) */
 button {
     background-color: #e20074;
-    float: right;
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 55%;
     color: #ffffff;
     border: 1px solid white;
     padding: 10px 10px;
