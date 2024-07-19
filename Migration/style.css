@@ -2,16 +2,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
     background-color: rgb(215, 208, 208); /* Light gray background */
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* T-Mobile Magenta theme */
-.Migration {
-    max-width: 100%; /* Take full width on small screens */
-    font-size: 16px; /* Adjust font size for readability */
-    padding: 10px; /* Reduce padding for smaller screens */
+.container {
+    max-width: 450px; /* Adjust as needed for your desired maximum width */
+    min-width: 450px;
+    font-size: 18px;
+    float: left;
+    padding: 15px;
     background-image: linear-gradient(to top, #e20074, #000000); /* Magenta to black */
     border-radius: 5px;
     color: #ffffff;
@@ -20,8 +22,8 @@ body {
 }
 
 .containerResult {
-    max-width: 450px; /* Adjust as needed for your desired maximum width */
-    min-width: 450px;
+    max-width: 400px; /* Adjust as needed for your desired maximum width */
+    min-width: 400px;
     font-size: 18px;
     padding: 15px;
     float: left;
@@ -33,8 +35,8 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0.5, 0.5);
 }
 .commissionResult {
-    max-width: 450px; /* Adjust as needed for your desired maximum width */
-    min-width: 450px;
+    max-width: 400px; /* Adjust as needed for your desired maximum width */
+    min-width: 400px;
     font-size: 18px;
     padding: 15px;
     float: left;
@@ -97,11 +99,9 @@ button:hover {
 }
 
 
-/* Media query for larger screens (optional) */
-@media (min-width: 768px) {
+/* Media query for smaller screens (e.g., cellphones) */
+@media (max-width: 500px) {
     .container {
-        max-width: 450px; /* Adjust as needed for tablet screens */
-        font-size: 18px; /* Increase font size for larger screens */
-        padding: 15px; /* Restore padding for tablets */
+        max-width: 100%; /* Take full width on small screens */
     }
 }
