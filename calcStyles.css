@@ -19,34 +19,19 @@ body {
     overflow: auto; /* Apply clearfix */
 }
 
-.containerResult {
-    max-width: 400px; /* Adjust as needed for your desired maximum width */
-    min-width: 400px;
-    font-size: 18px;
-    margin-top: 10px; /* Add some spacing between the containers */
-    padding: 15px;
-    float: left;
-    clear: left;
-    margin-top: 5px;
-    background-color: #e20074; /* T-Mobile Magenta */
-    border-radius: 5px;
-    color: #ffffff; /* White text */
-    box-shadow: 0 4px 6px rgba(0, 0, 0.5, 0.5);
-}
+.containerResult,
 .commissionResult {
-    max-width: 400px; /* Adjust as needed for your desired maximum width */
-    min-width: 400px;
+    max-width: 100%; /* Take full width on small screens */
     font-size: 18px;
     margin-top: 10px; /* Add some spacing between the containers */
     padding: 15px;
-    float: left;
-    clear: left;
-    margin-top: 5px;
     background-color: #e20074; /* T-Mobile Magenta */
     border-radius: 5px;
     color: #ffffff; /* White text */
-    box-shadow: 0 4px 6px rgba(0, 0, 0.5, 0.5);
-} 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+}
 
 h1 {
     margin: 2px;
@@ -64,6 +49,16 @@ input[type="text"] {
     margin-top: 2px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+input[type="radio"] {
+    margin: 5px ;
+    display: inline-block;
+}
+
+#radioText {
+    font-size: 16px;
+    margin-top: 5px;
 }
 
 select {
@@ -90,11 +85,11 @@ input[type="radio"] {
 /* Button styling (unchanged) */
 button {
     background-color: #e20074;
-    float: right;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 60%;
     color: #ffffff;
     border: 1px solid white;
-    padding: 10px 10px;
+    padding: 5px 10px;
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -111,10 +106,15 @@ button:hover {
         max-width: 100%; /* Adjust as needed */
     }
 
-    .Migration,
+    .migration,
     .containerResult,
-    .commissionResult {
+    .unitResults {
         max-width: 100%; /* Take full width on small screens */
         min-width: auto; /* Reset minimum width */
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        max-width: 85%; /* Take full width on small screens */
     }
 }
