@@ -15,6 +15,7 @@ body {
     padding: 10px; /* Reduce padding for smaller screens */
     background-image: linear-gradient(to top, #e20074, #000000); /* Magenta to black */
     border-radius: 5px;
+    color: #ffffff; /* White text */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     overflow: auto; /* Apply clearfix */
 }
