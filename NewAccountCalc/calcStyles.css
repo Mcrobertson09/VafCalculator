@@ -115,7 +115,9 @@ button:hover {
     }
 
     input[type="text"],
-    input[type="number"] {
+    input[type="number"],
+    select {
         max-width: 85%; /* Take full width on small screens */
     }
+    
 }
