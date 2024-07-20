@@ -22,9 +22,8 @@ body {
 .containerResult,
 .commissionResult {
     max-width: 100%; /* Take full width on small screens */
-    font-size: 18px;
     margin-top: 10px; /* Add some spacing between the containers */
-    padding: 15px;
+    padding: 5px;
     background-color: #e20074; /* T-Mobile Magenta */
     border-radius: 5px;
     color: #ffffff; /* White text */
@@ -70,6 +69,8 @@ select {
 table {
     width: 100%;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 input[type="radio"] {
