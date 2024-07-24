@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accessory Calculator</title>
+    <title>Unit Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="migration">
         <div class="container">
-            <h1>Accessory Unit Calculator</h1>
+            <h1>Unit Calculator</h1>
             <form id="salesForm">
                 <label for="devicesSold">Devices Sold:</label>
                 <input type="text" id="devicesSold" name="devicesSold" required>
                 <br>
                 <label for="accessoriesSold">Units Sold:</label>
                 <input type="text" id="accessoriesSold" name="accessoriesSold" required>
+                
                 <br>
-                <button type="button" onclick="calculateCurrentAPP(); calculateNeededUnits();">Calculate Total</button>
             </form>
         </div>
-        
+        <button type="button" onclick="calculateCurrentAPP(); calculateNeededUnits();">Calculate Total</button>
         <div class="containerResult">
             <h3>Current APP</h3>
             <table>
@@ -33,9 +33,8 @@
         </div>
         <div class="unitResults">
             <h3>Units Needed</h3>
-            <table class="content-table">
-                <thead>
-                    <tr id="content-header">
+            <table>
+                    <tr>
                         <th>1.84</th>
                         <th>2.0</th>
                         <th>2.2</th>
@@ -43,9 +42,7 @@
                         <th>3.5</th>
                         <th>4.0</th>
                     </tr> 
-                </thead>
-                <tbody>
-                    <tr id="content-results">
+                    <tr id="bottomtable">
                         <td id="1.84"></td>
                         <td id="2.00"></td>
                         <td id="2.20"></td>
@@ -53,7 +50,6 @@
                         <td id="3.50"></td>
                         <td id="4.00"></td>
                     </tr>
-                </tbody>
             </table>
         </div>
     </div>

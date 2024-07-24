@@ -54,10 +54,6 @@ button:hover {
 }
 
 @media (max-width: 480px) {
-    .parentContainer {
-        max-width: 100%; /* Adjust as needed */
-    }
-
 
     .container,
     body {

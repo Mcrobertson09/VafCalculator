@@ -1,39 +1,38 @@
 body {
-    display: flex;
+    max-width: 500px;
     justify-content: center;
-    background-color: rgb(215, 208, 208);
+    background-color: rgb(215, 208, 208); /* Light gray background */
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* T-Mobile Magenta theme */
 .migration {
-    width: 100%; /* Take up the full width of the viewport */
-    max-width: 500px; /* Set a maximum width for readability */
-    padding: 10px;
-    background-image: linear-gradient(to top, #e20074, #000000);
+    padding: 10px; /* Reduce padding for smaller screens */
+    background-image: linear-gradient(to top, #e20074, #000000); /* Magenta to black */
     border-radius: 5px;
     color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    display: inline-block;
 }
 
 .containerResult,
 .unitResults {
-    width: 100%; /* Take up the full width within the .migration container */
-    height: 125px;
+    margin-top: 10px;
     background-color: #e20074;
     border-radius: 5px;
     color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    margin: 5px auto; /* Center horizontally with minimal margins */
 }
 
 /* Flex the' flex! */
 table {
-    display: flex
-    ;
     min-width: 100%;
     border-top: 1px solid #ffffff;
+    text-align: center;
+}
+
+#bottomtable {
+    font-size: 26px;
+    ;
 }
 
 h3, h1 {
@@ -59,10 +58,10 @@ input[type="number"] {
 /* Button styling (unchanged) */
 button {
     background-color: #e20074;
-    margin: 12px 0 8px 350px;
     color: #ffffff;
-    padding: 5px 10px;
-    border-radius: 15px;
+    margin: 10px 0 2px 338px;
+    padding: 6px 10px;
+    border-radius: 25px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transform: translateY(0);
@@ -77,14 +76,14 @@ button:hover {
 
 
 @media (max-width: 480px) {
-    .parentContainer {
-        max-width: 100%; /* Adjust as needed */
-    }
-
 
     .container,
     body {
         max-width: 100%; /* Take full width on small screens */
         min-width: auto; /* Reset minimum width */
+    }
+
+    button {
+        margin: 10px 0 2px 285px;  
     }
 }
