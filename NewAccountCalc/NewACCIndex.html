@@ -8,12 +8,9 @@
 </head>
 <body>
     <div class="Migration">
-        <div class="container">
-            <h1>New Account VAF Calculator</h1>
+            <h1>New Account Calculator</h1>
+            <p>Next: $20 Credit, $15 Payout / Plus: $15 Credit, $10 Payout</p>
             <form id="salesForm">
-                <label for="devicesSold">Devices Sold: </label>
-                <input type="text" id="devicesSold" name="devicesSold" required>
-                <br>
                 <label for="linesActivated">Lines Activated: </label>
                 <select id="linesActivated" name="linesActivated">
                     <option value="1">1 line</option>
@@ -24,29 +21,44 @@
                     <option value="6">6 lines</option>
                 </select>
                 <br>
-                <div id="radioText">
-                    <label>Select an Option:</label> <br>
-                    <input type="radio" id="go5gNext" name="go5gOption" value="Go5G Next">
-                    <label for="go5gNext">Go5G Next</label>
-                    <input type="radio" id="go5gPlus" name="go5gOption" value="Go5G Plus" checked>
-                    <label for="go5gPlus">Go5G Plus</label>
-                    <input type="radio" id="go5g" name="go5gOption" value="Go5G">
-                    <label for="go5g">Go5G</label>
-                    <input type="radio" id="essentials" name="go5gOption" value="Essentials">
-                    <label for="essentials">Essentials</label>
+                <div>
+                <table>
+                <h3>Select an Option:</h3>
+                <tr>
+                    <td>
+                        <input type="radio" id="go5gNext" name="go5gOption" value="Go5G Next">
+                        <label for="go5gNext">Go5G Next</label>
+                    </td>
+                    <td class="rightside">
+                        <input type="radio" id="go5gPlus" name="go5gOption" value="Go5G Plus">
+                        <label for="go5gPlus">Go5G Plus</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>     
+                        <input type="radio" id="go5g" name="go5gOption" value="Go5G">
+                        <label for="go5g">Go5G</label>
+                    </td>
+                    <td class="rightside">     
+                        <input type="radio" id="essentials" name="go5gOption" value="Essentials">
+                        <label for="essentials">Essentials</label>
+                    </td>
+                </tr>
+                </table>
+               
                 </div>
+                <button type="button" onclick="calculateTotal(), commissionCalculation()">Calculate Total</button>
                 <br>
             </form>
-            <button type="button" onclick="calculateTotal(), commissionCalculation()">Calculate Total</button>
-        </div>
+        
         <div class="containerResult">
-            <table>
-                <h1>PLAN INFO</h1>
+            <table class="bottom">
+                <h2>PLAN</h2>
                 <tr>
                     <th>LINES</th>
                     <th>PLAN</th>
-                    <th>PLAN PRICE</th>
-                    <th>VAF TOTAL</th>
+                    <th>PRICE</th>
+                    <th>VAF $</th>
                 </tr>
                 <tr>
                     <td id="linesResult"></td>
@@ -57,12 +69,12 @@
             </table>
         </div>
         <div class="commissionResult">
-            <h1>COMMISSION</h1>
-            <table>
+            <h2>COMMISSION</h2>
+            <table class="bottom">
                 <tr>
-                    <th>PLAN<br>(50% MRC)</th>
-                    <th>LINE<br>(Plus/Next)</th>
-                    <th>COMMISSION<br>TOTAL</th>
+                    <th>50% MRC</th>
+                    <th>Plus/Next</th>
+                    <th>Commission</th>
                 </tr>
                 <tr>
                     <td id="planCommish"></td>

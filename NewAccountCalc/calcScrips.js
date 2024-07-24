@@ -7,7 +7,6 @@ const go5g = [75, 130, 155, 180, 205, 230];
 const essentials = [65, 90, 105, 120, 135, 150];
 
 function calculateTotal() {
-    const devicesSold = parseFloat(document.getElementById('devicesSold').value);
     const linesActivated = parseFloat(document.getElementById('linesActivated').value);
     const selectedOption = document.querySelector('input[name="go5gOption"]:checked').value;
 
@@ -34,8 +33,7 @@ function calculateTotal() {
 
     const vafValue = vafArray[linesActivated - 1]; // Adjust for 0-based index
     const lineTotal = linesActivated * multiplier;
-    const vafhits = devicesSold + linesActivated;
-    const finalTotal = lineTotal / vafhits;
+    const finalTotal = lineTotal / linesActivated;
 
     document.getElementById('linesResult').textContent = `${linesActivated}`;
     document.getElementById('planResult').textContent = `${selectedOption}`;

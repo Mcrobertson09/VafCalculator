@@ -9,7 +9,7 @@
 <body>
     <div class="migration">
         <div class="container">
-            <h1>APP Unit Calculator</h1>
+            <h1>Accessory Unit Calculator</h1>
             <form id="salesForm">
                 <label for="devicesSold">Devices Sold:</label>
                 <input type="text" id="devicesSold" name="devicesSold" required>
@@ -22,9 +22,9 @@
         </div>
         
         <div class="containerResult">
+            <h3>Current APP</h3>
             <table>
                 <tr>
-                    <th>Current APP</th>
                 </tr>
                 <tr>
                     <td id="currentAPP"></td>
@@ -32,24 +32,28 @@
             </table>
         </div>
         <div class="unitResults">
-            <table>
-                <caption>Units Needed</caption>
-                <tr>
-                    <th>1.84</th>
-                    <th>2.0</th>
-                    <th>2.2</th>
-                    <th>3.0</th>
-                    <th>3.5</th>
-                    <th>4.0</th>
-                </tr>
-                <tr>
-                    <td id="1.84"></td>
-                    <td id="2.00"></td>
-                    <td id="2.20"></td>
-                    <td id="3.00"></td>
-                    <td id="3.50"></td>
-                    <td id="4.00"></td>
-                </tr>
+            <h3>Units Needed</h3>
+            <table class="content-table">
+                <thead>
+                    <tr id="content-header">
+                        <th>1.84</th>
+                        <th>2.0</th>
+                        <th>2.2</th>
+                        <th>3.0</th>
+                        <th>3.5</th>
+                        <th>4.0</th>
+                    </tr> 
+                </thead>
+                <tbody>
+                    <tr id="content-results">
+                        <td id="1.84"></td>
+                        <td id="2.00"></td>
+                        <td id="2.20"></td>
+                        <td id="3.00"></td>
+                        <td id="3.50"></td>
+                        <td id="4.00"></td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
