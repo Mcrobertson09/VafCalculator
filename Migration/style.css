@@ -1,36 +1,27 @@
 body {
-    display: flex;
+    max-width: 500px;
     justify-content: center;
-    align-items: center;
-    height: 75vh;
     background-color: rgb(215, 208, 208); /* Light gray background */
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* T-Mobile Magenta theme */
 .Migration {
-    max-width: 100%; /* Take full width on small screens */
-    font-size: 16px; /* Adjust font size for readability */
     padding: 10px; /* Reduce padding for smaller screens */
     background-image: linear-gradient(to top, #e20074, #000000); /* Magenta to black */
     border-radius: 5px;
     color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    overflow: auto; /* Apply clearfix */
 }
 
 .containerResult,
 .commissionResult {
-    max-width: 100%; /* Take full width on small screens */
-    font-size: 18px;
-    margin-top: 10px; /* Add some spacing between the containers */
-    padding: 15px;
+    margin-top: 15px; /* Add some spacing between the containers */
+    padding: 5px;
     background-color: #e20074; /* T-Mobile Magenta */
     border-radius: 5px;
     color: #ffffff; /* White text */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    margin-left: auto;
-    margin-right: auto;
 }
 
 h1 {
@@ -46,10 +37,9 @@ p {
 
 
 /* Additional styling for form elements, buttons, etc. */
-input[type="text"],
-input[type="number"]
+input[type="text"]
 {
-    width: 90%;
+    width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -67,11 +57,9 @@ input[type="radio"] {
 /* Button styling (unchanged) */
 button {
     background-color: #e20074;
-    margin-top: 10px;
-    margin-left: 55%;
     color: #ffffff;
-    border: 1px solid white;
-    padding: 10px 10px;
+    margin: 10px 0 2px 338px;
+    padding: 6px 10px;
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -85,19 +73,21 @@ button:hover {
 
 
 @media (max-width: 480px) {
-    .parentContainer {
-        max-width: 100%; /* Adjust as needed */
-    }
 
-    .Migration,
-    .containerResult,
-    .commissionResult {
+    .container,
+    body {
         max-width: 100%; /* Take full width on small screens */
         min-width: auto; /* Reset minimum width */
     }
 
-    input[type="text"],
-    input[type="number"] {
-        max-width: 100%; /* Take full width on small screens */
+    button {
+        margin: 10px 0 2px 292px;  
     }
+
+    input[type="text"]
+{
+    width: 97%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 }
