@@ -15,7 +15,13 @@ function calculateTotal() {
     }
 
     const lineTotal = linesConverted * multiplier;
-    const finalTotal = lineTotal / devicesSold;
+    let finalTotal;
+
+    if (devicesSold === 0) {
+        finalTotal = lineTotal; // or handle it in another way, e.g., display a message
+    } else {
+        finalTotal = lineTotal / devicesSold;
+    }
 
     document.getElementById('linesResult').textContent = `Lines Converted: ${linesConverted} (${selectedOption})`;
     document.getElementById('vafResult').textContent = `VAF/Line: $${multiplier} x ${linesConverted} = $${lineTotal}`;
