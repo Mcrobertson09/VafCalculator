@@ -23,9 +23,9 @@ function calculateTotal() {
         finalTotal = lineTotal / devicesSold;
     }
 
-    document.getElementById('linesResult').textContent = `Lines Converted: ${linesConverted} (${selectedOption})`;
-    document.getElementById('vafResult').textContent = `VAF/Line: $${multiplier} x ${linesConverted} = $${lineTotal}`;
-    document.getElementById('totalResult').textContent = `Total VAF: $${finalTotal} ($${lineTotal} / ${devicesSold})`;
+    document.getElementById('linesResult').textContent = `${linesConverted}`;
+    document.getElementById('vafResult').textContent = `$${lineTotal}`;
+    document.getElementById('totalResult').textContent = `$${finalTotal}`;
 }
 
 function commissionCalculation() {
@@ -49,7 +49,7 @@ function commissionCalculation() {
     const deviceCommish = devicesSold * 5;
     const totalCommish = linesCommish + deviceCommish;
 
-    document.getElementById('vafCommish').textContent = `VAF Commission: $${linesCommish}`;
-    document.getElementById('deviceCommish').textContent = `Upgrade Commission: $${deviceCommish}`;
-    document.getElementById('totalCommish').textContent = `Total Commission: $${totalCommish}`;
+    document.getElementById('vafCommish').textContent = `$${linesCommish}`;
+    document.getElementById('deviceCommish').textContent = `$${deviceCommish}`;
+    document.getElementById('totalCommish').textContent = `$${totalCommish}`;
 }

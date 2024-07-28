@@ -8,9 +8,9 @@
 </head>
 <body>
     <div class="Migration">
-        
         <div class="container">
             <h1>Existing Migrations</h1>
+            <p>Next: $20 Credit, $15 Payout / Plus: $15 Credit, $10 Payout</p>
             <form id="salesForm">
                 <label for="devicesSold">Devices Sold: </label>
                 <input type="text" id="devicesSold" name="devicesSold" required>
@@ -30,17 +30,34 @@
             <button type="button" onclick="calculateTotal(), commissionCalculation()">Calculate Total</button>
         </div>
         <div class="containerResult">
-             <h1>VAF CREDIT</h1>
-            <p id="linesResult"></p>
-            <p id="vafResult"></p>
-            <p id="totalResult"></p>
-            
+            <table class="bottom">
+                <h1>VAF Credit</h1>
+                <tr>
+                    <th>Converted</th>
+                    <th>Line Credit</th>
+                    <th>Total Credit</th>
+                </tr>
+                <tr>
+                    <td id="linesResult"></td>
+                    <td id="vafResult"></td>
+                    <td id="totalResult"></td>
+                </tr>
+            </table>
         </div>
         <div class="commissionResult">
-            <h1>COMMISSION</h1>
-            <p id="vafCommish"></p>
-            <p id="deviceCommish"></p>
-            <p id="totalCommish"></p>
+            <table class="bottom">
+                <h1>Commission</h1>
+                <tr>
+                    <th>Migration</th>
+                    <th>Upgrades</th>
+                    <th>Total Payout</th>
+                </tr>
+                <tr>
+                    <td id="vafCommish"></td>
+                    <td id="deviceCommish"></td>
+                    <td id="totalCommish"></td>
+                </tr>
+            </table>
        </div>
     </div>
     <script src="script.js"></script>

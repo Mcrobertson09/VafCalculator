@@ -19,9 +19,8 @@ body {
     align-items: center;
 }
 
-h1 {
+ h3, h6 {
     margin: 15px;
-    font-size: 25px;
     text-align: center;
 }
 
@@ -33,7 +32,6 @@ h1 {
     padding: 20px;
     border-radius: 5px;
     gap: 20px; /* Adjust the spacing between buttons */
-    margin-top: 5px; /* Add some space between the buttons and the container */
 }
 
 button {
@@ -52,6 +50,11 @@ button {
 button:hover {
     transform: translateY(-2px);
 }
+
+.experience {
+    margin-top: 50px;
+}
+
 
 @media (max-width: 480px) {
 
