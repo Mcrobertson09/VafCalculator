@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migration Calculator</title>
+    <link rel="stylesheet" href="experience_rank.css">
+</head>
+<body>
+    <div class="Migration">
+        <div class="container">
+            <h1>Rank/Commission Calculator</h1>
+            <p>Calculator for Top 1%, 3%, 5%, 25% & Payout</p>
+            <form id="salesForm">
+                <table>
+                    <tr>
+                        <th><label for="hoursWorked">Hours Worked:</label></th>
+                        <th><label for="srMes">Total Sr. ME's:</label></th>
+                        <th><label for="teamPayout">Blended Attainment:</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="hoursWorked" name="hoursWorked" required></td>
+                        <td><input type="text" id="srMes" name="srMes" required></td>
+                        <td><input type="text" id="teamPayout" name="teamPayout" required></td>
+                    </tr>
+                </table>
+            </form>
+            <button type="button" onclick="calculateTotal()">Calculate Total</button>
+        </div>        
+        <div class="containerResult">
+                <h1>Rank</h1>
+                <p>Rank Needed to obtain payout</p>
+                <p id="topOnePercent">Top 1%: </p>
+                <p id="topThreeePercent"></p>
+                <p id="topFivePercent"></p>
+                <p id="topTwentyFivePercent">Top 2</p>
+        </div>
+        <div class="commissionResult">
+            <table class="bottom">
+                <h1>Commission</h1>
+                <tr>
+                    <th>Hourly</th>
+                    <th>Top 1%</th>
+                    <th>Top 3%</th>
+                    <th>Top 5%</th>
+                    <th>Top 25%</th>
+                </tr>
+                <tr>
+                    <td id="hourlyCommish"></td>
+                    <td id="topOneCommish"></td>
+                    <td id="topThreeCommish"></td>
+                    <td id="topFiveCommish"></td>
+                    <td id="topTwentyFiveCommish"></td>
+                </tr>
+            </table>
+       </div>
+    </div>
+    <script src="experience_rank.js"></script>
+</body>
+</html>
